@@ -15,23 +15,42 @@ struct OnboardingView: View {
         ZStack {
             background
             
-            button.view()
-                .frame(width: 236, height: 64)
-                .overlay(
-                    Label("Start Demo", systemImage: "arrow.forward")
-                .offset(x: 4, y: 4)
-                .font(.headline)
-                )
-                .background(
-                    Color.black
-                        .cornerRadius(30)
-                        .blur(radius: 30)
-                        .opacity(0.3)
-                        .offset(y: 10)
-                )
-                .onTapGesture {
-                    button.play(animationName: "active")
+            VStack(alignment: .leading, spacing: 16) {
+                Text("Learn Rive & SwiftUI")
+                    .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
+                    .frame(width: 260, alignment: .leading)
+                
+                Text("Don't skip design. Learn design and code, by building real apps with React and Swift.")
+                    .customFont(.body)
+                    .opacity(0.7)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Spacer()
+                
+                button.view()
+                    .frame(width: 236, height: 64)
+                    .overlay(
+                        Label("Start Demo", systemImage: "arrow.forward")
+                    .offset(x: 4, y: 4)
+                    .font(.headline)
+                    )
+                    .background(
+                        Color.black
+                            .cornerRadius(30)
+                            .blur(radius: 30)
+                            .opacity(0.3)
+                            .offset(y: 10)
+                    )
+                    .onTapGesture {
+                        button.play(animationName: "active")
                 }
+                
+                Text("This is a demo app that uses Rive Animations with SwiftUI")
+                    .customFont(.footnote)
+                    .opacity(0.7)
+            }
+            .padding(40)
+            .padding(.top, 40)
         }
     }
     

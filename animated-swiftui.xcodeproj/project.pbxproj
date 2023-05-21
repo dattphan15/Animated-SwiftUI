@@ -23,6 +23,7 @@
 		47F700682A1ACA7400C37157 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700652A1ACA7400C37157 /* Inter-Regular.ttf */; };
 		47F700692A1ACA7400C37157 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700662A1ACA7400C37157 /* Poppins-Bold.ttf */; };
 		47F7006A2A1ACA7400C37157 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700672A1ACA7400C37157 /* Inter-SemiBold.ttf */; };
+		47F7006D2A1ACCA900C37157 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7006C2A1ACCA900C37157 /* CustomFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		47F700662A1ACA7400C37157 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		47F700672A1ACA7400C37157 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		47F7006B2A1ACABC00C37157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		47F7006C2A1ACCA900C37157 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				4734C8D12A17D9E7001570B9 /* animated_swiftuiApp.swift */,
 				4734C8D32A17D9E7001570B9 /* ContentView.swift */,
 				4734C8F12A17F114001570B9 /* OnboardingView.swift */,
+				47F7006C2A1ACCA900C37157 /* CustomFont.swift */,
 				4734C8D52A17D9EA001570B9 /* Assets.xcassets */,
 				47F700642A1ACA7400C37157 /* Fonts */,
 				4734C8DF2A17DCAB001570B9 /* RiveAssets */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4734C8F22A17F114001570B9 /* OnboardingView.swift in Sources */,
+				47F7006D2A1ACCA900C37157 /* CustomFont.swift in Sources */,
 				4734C8D42A17D9E7001570B9 /* ContentView.swift in Sources */,
 				4734C8D22A17D9E7001570B9 /* animated_swiftuiApp.swift in Sources */,
 			);
