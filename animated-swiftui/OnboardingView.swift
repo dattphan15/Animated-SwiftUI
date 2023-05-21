@@ -45,7 +45,7 @@ struct OnboardingView: View {
                         button.play(animationName: "active")
                 }
                 
-                Text("This is a demo app that uses Rive Animations with SwiftUI")
+                Text("This is a demo app that uses Rive Animations with SwiftUI.")
                     .customFont(.footnote)
                     .opacity(0.7)
             }
