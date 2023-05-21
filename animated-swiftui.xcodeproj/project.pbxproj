@@ -20,6 +20,9 @@
 		4734C8ED2A17DCAB001570B9 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = 4734C8E62A17DCAB001570B9 /* icons.riv */; };
 		4734C8F02A17DD83001570B9 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 4734C8EF2A17DD83001570B9 /* RiveRuntime */; };
 		4734C8F22A17F114001570B9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734C8F12A17F114001570B9 /* OnboardingView.swift */; };
+		47F700682A1ACA7400C37157 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700652A1ACA7400C37157 /* Inter-Regular.ttf */; };
+		47F700692A1ACA7400C37157 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700662A1ACA7400C37157 /* Poppins-Bold.ttf */; };
+		47F7006A2A1ACA7400C37157 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700672A1ACA7400C37157 /* Inter-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,10 @@
 		4734C8E52A17DCAB001570B9 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
 		4734C8E62A17DCAB001570B9 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
 		4734C8F12A17F114001570B9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		47F700652A1ACA7400C37157 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		47F700662A1ACA7400C37157 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		47F700672A1ACA7400C37157 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		47F7006B2A1ACABC00C37157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +76,12 @@
 		4734C8D02A17D9E7001570B9 /* animated-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				47F7006B2A1ACABC00C37157 /* Info.plist */,
 				4734C8D12A17D9E7001570B9 /* animated_swiftuiApp.swift */,
 				4734C8D32A17D9E7001570B9 /* ContentView.swift */,
 				4734C8F12A17F114001570B9 /* OnboardingView.swift */,
 				4734C8D52A17D9EA001570B9 /* Assets.xcassets */,
+				47F700642A1ACA7400C37157 /* Fonts */,
 				4734C8DF2A17DCAB001570B9 /* RiveAssets */,
 				4734C8D72A17D9EA001570B9 /* Preview Content */,
 			);
@@ -99,6 +108,16 @@
 				4734C8E62A17DCAB001570B9 /* icons.riv */,
 			);
 			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		47F700642A1ACA7400C37157 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				47F700652A1ACA7400C37157 /* Inter-Regular.ttf */,
+				47F700662A1ACA7400C37157 /* Poppins-Bold.ttf */,
+				47F700672A1ACA7400C37157 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +184,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F7006A2A1ACA7400C37157 /* Inter-SemiBold.ttf in Resources */,
 				4734C8EB2A17DCAB001570B9 /* shapes.riv in Resources */,
 				4734C8E92A17DCAB001570B9 /* check.riv in Resources */,
 				4734C8D92A17D9EA001570B9 /* Preview Assets.xcassets in Resources */,
 				4734C8EA2A17DCAB001570B9 /* menu_button.riv in Resources */,
 				4734C8E72A17DCAB001570B9 /* house.riv in Resources */,
 				4734C8EC2A17DCAB001570B9 /* button.riv in Resources */,
+				47F700682A1ACA7400C37157 /* Inter-Regular.ttf in Resources */,
+				47F700692A1ACA7400C37157 /* Poppins-Bold.ttf in Resources */,
 				4734C8D62A17D9EA001570B9 /* Assets.xcassets in Resources */,
 				4734C8E82A17DCAB001570B9 /* confetti.riv in Resources */,
 				4734C8ED2A17DCAB001570B9 /* icons.riv in Resources */,
@@ -318,6 +340,7 @@
 				DEVELOPMENT_TEAM = 4A7SP49YPD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "animated-swiftui/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,6 +370,7 @@
 				DEVELOPMENT_TEAM = 4A7SP49YPD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "animated-swiftui/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
