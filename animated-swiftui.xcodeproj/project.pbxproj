@@ -20,6 +20,7 @@
 		4734C8ED2A17DCAB001570B9 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = 4734C8E62A17DCAB001570B9 /* icons.riv */; };
 		4734C8F02A17DD83001570B9 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 4734C8EF2A17DD83001570B9 /* RiveRuntime */; };
 		4734C8F22A17F114001570B9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734C8F12A17F114001570B9 /* OnboardingView.swift */; };
+		476DFC822A1C9B770027C125 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DFC812A1C9B770027C125 /* SignInView.swift */; };
 		47F700682A1ACA7400C37157 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700652A1ACA7400C37157 /* Inter-Regular.ttf */; };
 		47F700692A1ACA7400C37157 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700662A1ACA7400C37157 /* Poppins-Bold.ttf */; };
 		47F7006A2A1ACA7400C37157 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F700672A1ACA7400C37157 /* Inter-SemiBold.ttf */; };
@@ -40,6 +41,7 @@
 		4734C8E52A17DCAB001570B9 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
 		4734C8E62A17DCAB001570B9 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
 		4734C8F12A17F114001570B9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		476DFC812A1C9B770027C125 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		47F700652A1ACA7400C37157 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		47F700662A1ACA7400C37157 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		47F700672A1ACA7400C37157 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				4734C8D12A17D9E7001570B9 /* animated_swiftuiApp.swift */,
 				4734C8D32A17D9E7001570B9 /* ContentView.swift */,
 				4734C8F12A17F114001570B9 /* OnboardingView.swift */,
+				476DFC812A1C9B770027C125 /* SignInView.swift */,
 				47F7006C2A1ACCA900C37157 /* CustomFont.swift */,
 				4734C8D52A17D9EA001570B9 /* Assets.xcassets */,
 				47F700642A1ACA7400C37157 /* Fonts */,
@@ -213,6 +216,7 @@
 				47F7006D2A1ACCA900C37157 /* CustomFont.swift in Sources */,
 				4734C8D42A17D9E7001570B9 /* ContentView.swift in Sources */,
 				4734C8D22A17D9E7001570B9 /* animated_swiftuiApp.swift in Sources */,
+				476DFC822A1C9B770027C125 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
