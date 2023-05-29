@@ -33,6 +33,12 @@ struct SignInView: View {
                             .stroke()
                             .fill(.black.opacity(0.1))
                         )
+                    .overlay(
+                        Image("Icon Email")
+                            .frame(maxWidth: .infinity, alignment:
+                                    .leading)
+                            .padding(.leading, 8)
+                        )
             }
             
             Divider()
