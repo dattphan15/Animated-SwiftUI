@@ -24,7 +24,7 @@ struct SignInView: View {
                 .foregroundColor(.secondary)
                 TextField("", text: $email)
                     .customTextField()
-            }
+            
             
             Divider()
             
