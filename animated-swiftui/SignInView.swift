@@ -18,13 +18,21 @@ struct SignInView: View {
             Text("Sample text")
                 .customFont(.headline)
             
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Email")
                     .customFont(.subheadline)
-                .foregroundColor(.secondary)
+                    .foregroundColor(.secondary)
                 TextField("", text: $email)
                     .customTextField()
+            }
             
+            VStack(alignment: .leading) {
+                Text("Password")
+                    .customFont(.subheadline)
+                    .foregroundColor(.secondary)
+                SecureField("", text: $password)
+                    .customTextField(image: Image("Icon Lock"))
+            }
             
             Divider()
             
