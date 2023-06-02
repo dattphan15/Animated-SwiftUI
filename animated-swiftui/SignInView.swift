@@ -12,7 +12,7 @@ struct SignInView: View {
     @State var password = ""
     
     var body: some View {
-        VStack {
+        VStack(spacing: 24) {
             Text("Sign In")
                 .customFont(.largeTitle)
             Text("Sample text")
