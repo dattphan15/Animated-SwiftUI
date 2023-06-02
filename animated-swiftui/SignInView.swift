@@ -34,7 +34,12 @@ struct SignInView: View {
                     .customTextField(image: Image("Icon Lock"))
             }
             
-            Divider()
+            HStack {
+                Rectangle().frame(height: 1).opacity(0.1)
+                Text("OR").customFont(.subheadline2)
+                    .foregroundColor(.black.opacity(0.3))
+                Rectangle().frame(height: 1).opacity(0.1)
+            }
             
             Text("Sign up with Email, Apple or Google")
                 .customFont(.subheadline)
