@@ -23,11 +23,15 @@ struct OnboardingView: View {
                 .opacity(showModal ? 0.4 : 0)
                 .ignoresSafeArea()
             
-            if !showModal {
+            if showModal {
                 SignInView()
-                    .transition(.move(edge: .bottom))
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
                     .overlay(
-                        Button {} label: {
+                        Button {
+                            withAnimation(.spring()) {
+                                showModal = false
+                            }
+                        } label: {
                             Image(systemName: "xmark")
                                 .frame(width: 36, height: 36)
                                 .foregroundColor(.black)
@@ -38,6 +42,7 @@ struct OnboardingView: View {
                         }
                             .frame(maxHeight: .infinity, alignment: .bottom)
                     )
+                    .zIndex(1)
             }
         }
     }
