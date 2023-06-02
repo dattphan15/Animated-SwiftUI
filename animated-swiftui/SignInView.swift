@@ -35,6 +35,7 @@ struct SignInView: View {
             }
             
             Label("Sign In", systemImage: "arrow.right")
+                .customFont(.headline)
                 .padding(20)
                 .frame(maxWidth: .infinity)
                 .background(Color(hex: "F77D8E"))
