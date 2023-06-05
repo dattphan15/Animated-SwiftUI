@@ -12,8 +12,36 @@ struct SignInView: View {
     @State var email = ""
     @State var password = ""
     @State var isLoading = false
+    @Binding var showModal: Bool
+    
     let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
     let confetti = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
+    
+    func logIn() {
+        isLoading = true
+        
+        if email != "" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                try? check.triggerInput("Check")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+                try? confetti.triggerInput("Trigger explosion")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                withAnimation {
+                    showModal = false
+                }
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                try? check.triggerInput("Error")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+            }
+        }
+    }
 
     var body: some View {
         VStack(spacing: 24) {
@@ -39,14 +67,7 @@ struct SignInView: View {
             }
             
             Button {
-                isLoading = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    try? check.triggerInput("Check")
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    isLoading = false
-                    try? confetti.triggerInput("Trigger explosion")
-                }
+                logIn()
             } label: {
                 Label("Sign In", systemImage: "arrow.right")
                     .customFont(.headline)
@@ -106,6 +127,6 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInView(showModal: .constant(true))
     }
 }
