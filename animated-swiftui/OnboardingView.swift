@@ -91,7 +91,8 @@ struct OnboardingView: View {
         .padding(.top, 40)
     }
     
-    var background: some View {             RiveViewModel(fileName: "shapes").view()
+    var background: some View {
+        RiveViewModel(fileName: "shapes").view()
             .ignoresSafeArea()
             .blur(radius: 30)
             .background(

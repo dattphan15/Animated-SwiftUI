@@ -18,8 +18,8 @@
 		4734C8EB2A17DCAB001570B9 /* shapes.riv in Resources */ = {isa = PBXBuildFile; fileRef = 4734C8E42A17DCAB001570B9 /* shapes.riv */; };
 		4734C8EC2A17DCAB001570B9 /* button.riv in Resources */ = {isa = PBXBuildFile; fileRef = 4734C8E52A17DCAB001570B9 /* button.riv */; };
 		4734C8ED2A17DCAB001570B9 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = 4734C8E62A17DCAB001570B9 /* icons.riv */; };
-		4734C8F02A17DD83001570B9 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 4734C8EF2A17DD83001570B9 /* RiveRuntime */; };
 		4734C8F22A17F114001570B9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734C8F12A17F114001570B9 /* OnboardingView.swift */; };
+		475F2AD82A2C3BAF00534798 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 475F2AD72A2C3BAF00534798 /* RiveRuntime */; };
 		476DFC822A1C9B770027C125 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DFC812A1C9B770027C125 /* SignInView.swift */; };
 		478C871F2A2A855F008EFF7A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478C871E2A2A855F008EFF7A /* Extensions.swift */; };
 		47ED41482A251022004B780D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED41472A251022004B780D /* CustomTextField.swift */; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4734C8F02A17DD83001570B9 /* RiveRuntime in Frameworks */,
+				475F2AD82A2C3BAF00534798 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +149,7 @@
 			);
 			name = "animated-swiftui";
 			packageProductDependencies = (
-				4734C8EF2A17DD83001570B9 /* RiveRuntime */,
+				475F2AD72A2C3BAF00534798 /* RiveRuntime */,
 			);
 			productName = "animated-swiftui";
 			productReference = 4734C8CE2A17D9E7001570B9 /* animated-swiftui.app */;
@@ -180,7 +180,7 @@
 			);
 			mainGroup = 4734C8C52A17D9E7001570B9;
 			packageReferences = (
-				4734C8EE2A17DD83001570B9 /* XCRemoteSwiftPackageReference "rive-ios" */,
+				475F2AD62A2C3BAF00534798 /* XCRemoteSwiftPackageReference "rive-ios" */,
 			);
 			productRefGroup = 4734C8CF2A17D9E7001570B9 /* Products */;
 			projectDirPath = "";
@@ -362,6 +362,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +393,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,20 +431,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4734C8EE2A17DD83001570B9 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+		475F2AD62A2C3BAF00534798 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rive-app/rive-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4734C8EF2A17DD83001570B9 /* RiveRuntime */ = {
+		475F2AD72A2C3BAF00534798 /* RiveRuntime */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4734C8EE2A17DD83001570B9 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			package = 475F2AD62A2C3BAF00534798 /* XCRemoteSwiftPackageReference "rive-ios" */;
 			productName = RiveRuntime;
 		};
 /* End XCSwiftPackageProductDependency section */
