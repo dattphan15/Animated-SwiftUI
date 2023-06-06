@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473404812A2EC86900CF04DE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473404802A2EC86900CF04DE /* TabBar.swift */; };
 		4734C8D22A17D9E7001570B9 /* animated_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734C8D12A17D9E7001570B9 /* animated_swiftuiApp.swift */; };
 		4734C8D42A17D9E7001570B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734C8D32A17D9E7001570B9 /* ContentView.swift */; };
 		4734C8D62A17D9EA001570B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4734C8D52A17D9EA001570B9 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		473404802A2EC86900CF04DE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4734C8CE2A17D9E7001570B9 /* animated-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "animated-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4734C8D12A17D9E7001570B9 /* animated_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animated_swiftuiApp.swift; sourceTree = "<group>"; };
 		4734C8D32A17D9E7001570B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4734047E2A2EC15500CF04DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4734C8F12A17F114001570B9 /* OnboardingView.swift */,
+				476DFC812A1C9B770027C125 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4734047F2A2EC17700CF04DE /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				478C871E2A2A855F008EFF7A /* Extensions.swift */,
+				47ED41472A251022004B780D /* CustomTextField.swift */,
+				47F7006C2A1ACCA900C37157 /* CustomFont.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		4734C8C52A17D9E7001570B9 = {
 			isa = PBXGroup;
 			children = (
@@ -87,11 +108,9 @@
 				47F7006B2A1ACABC00C37157 /* Info.plist */,
 				4734C8D12A17D9E7001570B9 /* animated_swiftuiApp.swift */,
 				4734C8D32A17D9E7001570B9 /* ContentView.swift */,
-				4734C8F12A17F114001570B9 /* OnboardingView.swift */,
-				476DFC812A1C9B770027C125 /* SignInView.swift */,
-				478C871E2A2A855F008EFF7A /* Extensions.swift */,
-				47ED41472A251022004B780D /* CustomTextField.swift */,
-				47F7006C2A1ACCA900C37157 /* CustomFont.swift */,
+				473404802A2EC86900CF04DE /* TabBar.swift */,
+				4734047E2A2EC15500CF04DE /* Views */,
+				4734047F2A2EC17700CF04DE /* Styles */,
 				4734C8D52A17D9EA001570B9 /* Assets.xcassets */,
 				47F700642A1ACA7400C37157 /* Fonts */,
 				4734C8DF2A17DCAB001570B9 /* RiveAssets */,
@@ -221,6 +240,7 @@
 				4734C8F22A17F114001570B9 /* OnboardingView.swift in Sources */,
 				47F7006D2A1ACCA900C37157 /* CustomFont.swift in Sources */,
 				47ED41482A251022004B780D /* CustomTextField.swift in Sources */,
+				473404812A2EC86900CF04DE /* TabBar.swift in Sources */,
 				4734C8D42A17D9E7001570B9 /* ContentView.swift in Sources */,
 				4734C8D22A17D9E7001570B9 /* animated_swiftuiApp.swift in Sources */,
 				476DFC822A1C9B770027C125 /* SignInView.swift in Sources */,
