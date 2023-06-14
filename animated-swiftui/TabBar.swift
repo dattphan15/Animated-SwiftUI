@@ -13,13 +13,15 @@ struct TabBar: View {
     
     var body: some View {
         HStack {
-            Button {
-                try? icon.setInput("active", value: true)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    try? icon.setInput("active", value: false)
-                }
-            } label: {
-                icon.view()
+            ForEach(tabItems) { item in
+                Button {
+                    try? item.icon.setInput("active", value: true)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        try? item.icon.setInput("active", value: false)
+                    }
+                } label: {
+                    item.icon.view()
+            }
             }
         }
         .background(Color("Background 2").opacity(0.8))
@@ -31,3 +33,16 @@ struct TabBar_Previews: PreviewProvider {
         TabBar()
     }
 }
+
+struct TabItem: Identifiable {
+    var id = UUID()
+    var icon: RiveViewModel
+}
+
+var tabItems = [
+    TabItem(icon: RiveViewModel(fileName: "icons", stateMachineName: "CHAT_Interactivity", artboardName: "CHAT")),
+    TabItem(icon: RiveViewModel(fileName: "icons", stateMachineName: "SEARCH_Interactivity", artboardName: "SEARCH")),
+    TabItem(icon: RiveViewModel(fileName: "icons", stateMachineName: "TIMER_Interactivity", artboardName: "TIMER")),
+    TabItem(icon: RiveViewModel(fileName: "icons", stateMachineName: "BELL_Interactivity", artboardName: "BELL")),
+    TabItem(icon: RiveViewModel(fileName: "icons", stateMachineName: "USER_Interactivity", artboardName: "USER"))
+]
