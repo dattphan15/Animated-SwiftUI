@@ -23,6 +23,7 @@
 		475F2AD82A2C3BAF00534798 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 475F2AD72A2C3BAF00534798 /* RiveRuntime */; };
 		476DFC822A1C9B770027C125 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476DFC812A1C9B770027C125 /* SignInView.swift */; };
 		478C871F2A2A855F008EFF7A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478C871E2A2A855F008EFF7A /* Extensions.swift */; };
+		4792C1712A4A882D00021EA9 /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4792C1702A4A882D00021EA9 /* HCard.swift */; };
 		47C5F62E2A496BA700635B63 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5F62C2A496BA600635B63 /* CourseSection.swift */; };
 		47C5F62F2A496BA700635B63 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5F62D2A496BA600635B63 /* Course.swift */; };
 		47C5F6312A496D4D00635B63 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5F6302A496D4D00635B63 /* VCard.swift */; };
@@ -50,6 +51,7 @@
 		4734C8F12A17F114001570B9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		476DFC812A1C9B770027C125 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		478C871E2A2A855F008EFF7A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4792C1702A4A882D00021EA9 /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
 		47C5F62C2A496BA600635B63 /* CourseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
 		47C5F62D2A496BA600635B63 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		47C5F6302A496D4D00635B63 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				4734C8D32A17D9E7001570B9 /* ContentView.swift */,
 				473404802A2EC86900CF04DE /* TabBar.swift */,
 				47C5F6302A496D4D00635B63 /* VCard.swift */,
+				4792C1702A4A882D00021EA9 /* HCard.swift */,
 				4734047E2A2EC15500CF04DE /* Views */,
 				4734047F2A2EC17700CF04DE /* Styles */,
 				47C5F62B2A496BA600635B63 /* Model */,
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4792C1712A4A882D00021EA9 /* HCard.swift in Sources */,
 				4734C8F22A17F114001570B9 /* OnboardingView.swift in Sources */,
 				47F7006D2A1ACCA900C37157 /* CustomFont.swift in Sources */,
 				47C5F62F2A496BA700635B63 /* Course.swift in Sources */,
