@@ -115,6 +115,7 @@
 				4734C8D12A17D9E7001570B9 /* animated_swiftuiApp.swift */,
 				4734C8D32A17D9E7001570B9 /* ContentView.swift */,
 				473404802A2EC86900CF04DE /* TabBar.swift */,
+				47C5F6302A496D4D00635B63 /* VCard.swift */,
 				4734047E2A2EC15500CF04DE /* Views */,
 				4734047F2A2EC17700CF04DE /* Styles */,
 				47C5F62B2A496BA600635B63 /* Model */,
@@ -122,7 +123,6 @@
 				47F700642A1ACA7400C37157 /* Fonts */,
 				4734C8DF2A17DCAB001570B9 /* RiveAssets */,
 				4734C8D72A17D9EA001570B9 /* Preview Content */,
-				47C5F6302A496D4D00635B63 /* VCard.swift */,
 			);
 			path = "animated-swiftui";
 			sourceTree = "<group>";
