@@ -29,6 +29,13 @@ struct ContentView: View {
                     Text("User")
                 }
             }
+            .safeAreaInset(edge: .bottom) {
+                Color.clear.frame(height: 80)
+            }
+            .safeAreaInset(edge: .top) {
+                Color.clear.frame(height: 104)
+            }
+            .ignoresSafeArea()
             
             button.view()
                 .frame(width: 44, height: 44)
