@@ -43,31 +43,25 @@ struct SideMenu: View {
                         .frame(height: 1)
                         .opacity(0.1)
                         .padding(.horizontal)
-                    HStack(spacing: 14) {
-                        item.icon.view()
-                            .frame(width: 32, height: 32)
-                            .opacity(0.6)
-                        Text(item.text)
-                            .customFont(.headline)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(12)
-                    .background(
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(.blue)
-                            .frame(maxWidth: selectedMenu == item.menu ? .infinity : 0)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    )
-                    .background(Color("Background 2"))
-                    .onTapGesture{
-                        item.icon.setInput("active", value: true)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                            icon.setInput("active", value: false)
-                        }
-                        withAnimation {
-                            selectedMenu = item.menu
-                        }
+                    MenuRow(item: item, selectedMenu: $selectedMenu)
                 }
+            }
+            .padding(8)
+            
+            Text("HISTORY")
+                .customFont(.subheadline2)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, 24)
+                .padding(.top, 40)
+                .opacity(0.7)
+            
+            VStack(alignment: .leading, spacing: 0) {
+                ForEach(menuItems2) { item in
+                    Rectangle()
+                        .frame(height: 1)
+                        .opacity(0.1)
+                        .padding(.horizontal)
+                    MenuRow(item: item, selectedMenu: $selectedMenu)
                 }
             }
             .padding(8)
@@ -102,12 +96,21 @@ var menuItems = [
     MenuItem(text: "Help", icon: RiveViewModel(fileName: "icons", stateMachineName: "CHAT_Interactivity", artboardName: "CHAT"), menu: .help),
 ]
 
+var menuItems2 = [
+    MenuItem(text: "History", icon: RiveViewModel(fileName: "icons", stateMachineName: "TIMER_Interactivity", artboardName: "TIMER"), menu: .history),
+    MenuItem(text: "Notifications", icon: RiveViewModel(fileName: "icons", stateMachineName: "BELL_Interactivity", artboardName: "BELL"), menu: .notifications)
+]
+
+var menuItems3 = [
+    MenuItem(text: "Dark Mode", icon: RiveViewModel(fileName: "icons", stateMachineName: "TIMER_Interactivity", artboardName: "TIMER"), menu: .history)
+]
+
 enum SelectedMenu: String {
     case home
     case search
     case favorites
     case help
     case history
-    case Notifications
+    case notifications
     case darkmode
 }
