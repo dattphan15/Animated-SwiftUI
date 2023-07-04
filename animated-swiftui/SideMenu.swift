@@ -55,7 +55,10 @@ struct SideMenu: View {
                     .background(
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
                             .fill(.blue)
+                            .frame(maxWidth: selectedMenu == item.menu ? .infinity : 0)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     )
+                    .background(Color("Background 2"))
                     .onTapGesture{
                         item.icon.setInput("active", value: true)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
