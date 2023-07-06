@@ -10,6 +10,8 @@ import RiveRuntime
 
 struct SideMenu: View {
     @State var selectedMenu: SelectedMenu = .home
+    @State var isDarkMode = false
+    
     let icon = RiveViewModel(fileName: "icons", stateMachineName: "HOME_interactivity", artboardName: "HOME")
     
     var body: some View {
@@ -67,6 +69,23 @@ struct SideMenu: View {
             .padding(8)
             
             Spacer()
+            
+            HStack(spacing: 14) {
+                menuItems3[0].icon.view()
+                    .frame(width: 32, height: 32)
+                    .opacity(0.6)
+                    .onChange(of: isDarkMode) { newValue in
+                        if newValue {
+                            menuItems3[0].icon.setInput("active", value: true)
+                        } else {
+                            menuItems3[0].icon.setInput("active", value: false)
+                        }
+                    }
+                Text(menuItems3[0].text)
+                    .customFont(.headline)
+                Toggle("", isOn: $isDarkMode)
+            }
+            .padding(20)
         }
         .foregroundColor(.white)
         .frame(maxWidth: 288, maxHeight: .infinity)
@@ -102,7 +121,7 @@ var menuItems2 = [
 ]
 
 var menuItems3 = [
-    MenuItem(text: "Dark Mode", icon: RiveViewModel(fileName: "icons", stateMachineName: "TIMER_Interactivity", artboardName: "TIMER"), menu: .history)
+    MenuItem(text: "Dark Mode", icon: RiveViewModel(fileName: "icons", stateMachineName: "SETTINGS_Interactivity", artboardName: "SETTINGS"), menu: .history)
 ]
 
 enum SelectedMenu: String {
